@@ -14,7 +14,11 @@ const signUserOut =async () =>{
   return (
     <div>
      <Link to='/'>Home</Link><br/>
-     <Link to='/login'>Login page</Link>
+    { !user ? 
+    
+    <Link to='/login'>Login page</Link>
+    : <Link to='/createpost'>Create Post</Link>}
+   
      <div>
   {user &&(   <>
     <p>{user?.email}</p>
