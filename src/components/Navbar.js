@@ -17,7 +17,7 @@ const signUserOut =async () =>{
      <Link to='/login'>Login page</Link>
      <div>
   {user &&(   <>
-    <p>{user?.dislayName}</p>
+    <p>{user?.email}</p>
      <img alt="apple" src={user.photoURL}/> <br></br>
      <button onClick={signUserOut}>Sign Out</button>
   </>
